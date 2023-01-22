@@ -1,0 +1,21 @@
+{
+  "name": "curd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js -e js,ejs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "joi": "^17.6.4",
+    "mongoose": "^6.6.0",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "validator": "^13.7.0"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="form-style-5" style="margin-top: 106px">
+        <form action="/update_employee/<%= Edit_Employee._id %>" method="post" enctype="multipart/form-data" style="background-color: #84a8b7";>
+        <fieldset>
+        <legend><span class="number">1</span> Employee Info</legend>
+        <input type="text" name="name" placeholder="Your Name *" value="<%= Edit_Employee.name %>">
+        <input type="email" name="email" placeholder="Your Email *" value="<%= Edit_Employee.email %>" >
+        <input type="number" name="phone_no" placeholder="Your Phone No *" value="<%= Edit_Employee.phone_no %>">
+        <input type="text" name="password" placeholder="Your Password *" value="<%= Edit_Employee.password %>">
+        <input type="text" name="cpassword" placeholder="Your Confirm Password *" value="<%= Edit_Employee.cpassword %>">
+        <input type="file" name="file">
+        <img src="../all_image/<%= Edit_Employee.file %>" width="50px" height="50px">
+        </fieldset>
+        <input type="submit" value="Apply" />
+        </form>
+        </div>
+</body>
+</html>
