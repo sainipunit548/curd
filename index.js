@@ -12,5 +12,10 @@ const temp2 = {
     temp: "987",
     age: 45
 }
+
+const temp3 = {
+    temp: "888",
+    age: 77
+}
 body = {...body, ...temp, _id: undefined}
 console.log(body)
