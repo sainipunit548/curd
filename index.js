@@ -9,4 +9,4 @@ const temp = {
     age: 21
 }
 body = {...body, ...temp, _id: undefined}
-console.log(body)
+
